@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { CmpAddEditComponent } from './cmp-add-edit/cmp-add-edit.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'crud-app-using-materialUI';
+
+  constructor(private dialog:MatDialog){}
+
+  openAddEditForm(){
+    this.dialog.open(CmpAddEditComponent);
+  }
 }
