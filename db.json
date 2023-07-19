@@ -1,0 +1,82 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employee": [
+    {
+      "firstName": "Sourav",
+      "lastname": "Prasabba",
+      "email": "sp27venk@cm.cm",
+      "dob": "2023-07-18T18:30:00.000Z",
+      "education": "Graduation",
+      "company": "Perfios",
+      "experience": "1",
+      "package": "4",
+      "gender": "male",
+      "id": 4
+    },
+    {
+      "firstName": "mayur ",
+      "lastname": "polojwar",
+      "email": "mayur@gmail.co",
+      "dob": "2023-07-11T18:30:00.000Z",
+      "education": "Graduation",
+      "company": "oracle",
+      "experience": "4",
+      "package": "13",
+      "gender": "male",
+      "id": 5
+    },
+    {
+      "firstName": "Muni ",
+      "lastname": "Govardhan",
+      "email": "muni@gmail.com",
+      "dob": "2023-06-30T18:30:00.000Z",
+      "education": "Graduation",
+      "company": "tertalmint",
+      "experience": "",
+      "package": "4",
+      "gender": "male",
+      "id": 6
+    },
+    {
+      "firstName": "Jitesh ",
+      "lastname": "p",
+      "email": "",
+      "dob": "",
+      "education": "",
+      "company": "",
+      "experience": "1",
+      "package": "",
+      "gender": "",
+      "id": 7
+    },
+    {
+      "firstName": "Guda",
+      "lastname": "Polojwar",
+      "email": "guda@gmail.com",
+      "dob": "2023-07-10T18:30:00.000Z",
+      "education": "Graduation",
+      "company": "Infosys",
+      "experience": "3",
+      "package": "12",
+      "gender": "Female",
+      "action": "",
+      "id": 8
+    }
+  ]
+}

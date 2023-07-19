@@ -12,3 +12,15 @@
 .example-spacer {
     flex: 1 1 auto;
 }
+.mat-elevation-z8{
+    max-width: 1234px;
+    padding-top: 20px;
+    margin: 0 auto;
+    mat-form-field{
+        width: 100%;
+    }
+    
+}
+th,td{
+    align-items: center;
+}
