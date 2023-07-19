@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   title = 'crud-app-using-materialUI';
 
   displayedColumns: string[] = ['id', 'firstName', 'lastname', 'email', 'dob',
-    'education', 'company', 'experience', 'package', 'gender',
+    'education', 'company', 'experience', 'package', 'gender','action'
   ];
   dataSource!: MatTableDataSource<any>;
 
@@ -39,6 +39,8 @@ export class AppComponent implements OnInit {
     this.empService.getEmployeeList().subscribe({
       next: (res) => {
         this.dataSource= new MatTableDataSource(res);
+        console.log(this.dataSource.filteredData);
+        
         this.dataSource.sort= this.sort;
         this.dataSource.paginator= this.paginator;
       },
@@ -49,6 +51,8 @@ export class AppComponent implements OnInit {
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
+    console.log(this.dataSource);
+    
 
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();

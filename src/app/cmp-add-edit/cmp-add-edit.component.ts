@@ -25,7 +25,8 @@ export class CmpAddEditComponent {
       company: '',
       experience: '',
       package: '',
-      gender:''
+      gender:'',
+      action:'',
     })
   }
 
@@ -42,5 +43,9 @@ export class CmpAddEditComponent {
         }
       })
     }
+  }
+  uio(){
+    console.log("nkl");
+    
   }
 }

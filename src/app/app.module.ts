@@ -9,13 +9,8 @@ import { CmpAddEditComponent } from './cmp-add-edit/cmp-add-edit.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
-import { MatTableModule, MatTableDataSource } from '@angular/material/table';
-import { CommonModule } from '@angular/common';
-import { MatIconModule } from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+
 
 
 @NgModule({
@@ -34,17 +29,7 @@ import { MatIconModule } from '@angular/material/icon';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    ViewChild,
-    MatTableModule,
-    MatTableDataSource,
-    MatFormFieldModule,
-    MatInputModule,
-    MatPaginatorModule,
-    MatSortModule,
-    CommonModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

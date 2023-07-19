@@ -18,15 +18,6 @@
   },
   "employee": [
     {
-      "id": 1
-    },
-    {
-      "id": 2
-    },
-    {
-      "id": 3
-    },
-    {
       "firstName": "Sourav",
       "lastname": "Prasabba",
       "email": "sp27venk@cm.cm",
@@ -49,6 +40,43 @@
       "package": "13",
       "gender": "male",
       "id": 5
+    },
+    {
+      "firstName": "Muni ",
+      "lastname": "Govardhan",
+      "email": "muni@gmail.com",
+      "dob": "2023-06-30T18:30:00.000Z",
+      "education": "Graduation",
+      "company": "tertalmint",
+      "experience": "",
+      "package": "4",
+      "gender": "male",
+      "id": 6
+    },
+    {
+      "firstName": "Jitesh ",
+      "lastname": "p",
+      "email": "",
+      "dob": "",
+      "education": "",
+      "company": "",
+      "experience": "1",
+      "package": "",
+      "gender": "",
+      "id": 7
+    },
+    {
+      "firstName": "Guda",
+      "lastname": "Polojwar",
+      "email": "guda@gmail.com",
+      "dob": "2023-07-10T18:30:00.000Z",
+      "education": "Graduation",
+      "company": "Infosys",
+      "experience": "3",
+      "package": "12",
+      "gender": "Female",
+      "action": "",
+      "id": 8
     }
   ]
 }
