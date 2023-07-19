@@ -54,18 +54,6 @@
       "id": 6
     },
     {
-      "firstName": "Jitesh ",
-      "lastname": "p",
-      "email": "",
-      "dob": "",
-      "education": "",
-      "company": "",
-      "experience": "1",
-      "package": "",
-      "gender": "",
-      "id": 7
-    },
-    {
       "firstName": "Guda",
       "lastname": "Polojwar",
       "email": "guda@gmail.com",
@@ -77,6 +65,19 @@
       "gender": "Female",
       "action": "",
       "id": 8
+    },
+    {
+      "firstName": "test",
+      "lastname": "test",
+      "email": "test@test.com",
+      "dob": "2023-07-03T18:30:00.000Z",
+      "education": "",
+      "company": "",
+      "experience": "",
+      "package": "",
+      "gender": "",
+      "action": "",
+      "id": 9
     }
   ]
 }

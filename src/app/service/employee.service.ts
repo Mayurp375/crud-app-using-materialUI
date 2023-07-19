@@ -16,4 +16,8 @@ export class EmployeeService {
     return this.http.get('http://localhost:3000/employee');
    // throw new Error('Method not implemented.');
   }
+
+  deletEmployee(id:number):Observable<any>{
+    return this.http.delete(`http://localhost:3000/employee/${id}`);
+  }
 }

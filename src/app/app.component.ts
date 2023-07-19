@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   title = 'crud-app-using-materialUI';
 
   displayedColumns: string[] = ['id', 'firstName', 'lastname', 'email', 'dob',
-    'education', 'company', 'experience', 'package', 'gender','action'
+    'education', 'company', 'experience', 'package', 'gender', 'action'
   ];
   dataSource!: MatTableDataSource<any>;
 
@@ -32,17 +32,24 @@ export class AppComponent implements OnInit {
   }
 
   openAddEditForm() {
-    this.dialog.open(CmpAddEditComponent);
+    const dialog = this.dialog.open(CmpAddEditComponent);
+    dialog.afterClosed().subscribe({
+      next: (val) => {
+        if (val) {
+          this.getEmployeeList();
+        }
+      }
+    })
   }
 
   getEmployeeList() {
     this.empService.getEmployeeList().subscribe({
       next: (res) => {
-        this.dataSource= new MatTableDataSource(res);
+        this.dataSource = new MatTableDataSource(res);
         console.log(this.dataSource.filteredData);
-        
-        this.dataSource.sort= this.sort;
-        this.dataSource.paginator= this.paginator;
+
+        this.dataSource.sort = this.sort;
+        this.dataSource.paginator = this.paginator;
       },
       error: console.log,
     })
@@ -52,10 +59,25 @@ export class AppComponent implements OnInit {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
     console.log(this.dataSource);
-    
+
 
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
     }
+  }
+
+  deletEmployee(id: number) {
+    this.empService.deletEmployee(id).subscribe({
+      next: (res) => {
+        console.log('delete successfull')
+      },
+      error: console.log,
+    })
+  }
+
+  openEditdata(data:any){
+    this.dialog.open(CmpAddEditComponent,{
+      data,
+    });
   }
 }
