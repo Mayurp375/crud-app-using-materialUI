@@ -16,5 +16,39 @@
   "profile": {
     "name": "typicode"
   },
-  "employee": []
+  "employee": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "firstName": "Sourav",
+      "lastname": "Prasabba",
+      "email": "sp27venk@cm.cm",
+      "dob": "2023-07-18T18:30:00.000Z",
+      "education": "Graduation",
+      "company": "Perfios",
+      "experience": "1",
+      "package": "4",
+      "gender": "male",
+      "id": 4
+    },
+    {
+      "firstName": "mayur ",
+      "lastname": "polojwar",
+      "email": "mayur@gmail.co",
+      "dob": "2023-07-11T18:30:00.000Z",
+      "education": "Graduation",
+      "company": "oracle",
+      "experience": "4",
+      "package": "13",
+      "gender": "male",
+      "id": 5
+    }
+  ]
 }
