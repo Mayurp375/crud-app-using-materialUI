@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { EmployeeService } from '../service/employee.service';
 
 @Component({
   selector: 'app-cmp-add-edit',
@@ -12,7 +13,7 @@ export class CmpAddEditComponent {
     'Matric', 'Highschool', 'Deploma', 'Graduation', 'Post-Graduation'
   ]
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder , empService : EmployeeService) {
     this.empForm = this.fb.group({
       firstName: '',
       lastname: '',
@@ -22,6 +23,13 @@ export class CmpAddEditComponent {
       company: '',
       experience: '',
       package: '',
+      gender:''
     })
+  }
+
+  onFormSubmit(){
+    if(this.empForm.valid){
+      console.log(this.empForm.value);
+    }
   }
 }
